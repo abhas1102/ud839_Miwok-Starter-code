@@ -22,24 +22,26 @@ public class NumbersActivity extends AppCompatActivity {
         setContentView(R.layout.activity_numbers);
 
 
-        ArrayList<String> listOfNumbers = new ArrayList<String>();
-        listOfNumbers.add(0, "one");
-        listOfNumbers.add(1, "two");
-        listOfNumbers.add(2, "three");
-        listOfNumbers.add(3, "four");
-        listOfNumbers.add(4, "five");
-        listOfNumbers.add(5, "six");
-        listOfNumbers.add(6, "seven");
-        listOfNumbers.add(7, "eight");
-        listOfNumbers.add(8, "nine");
-        listOfNumbers.add(9, "ten");
+        ArrayList<Words> listOfNumbers = new ArrayList<Words>();
 
-        ArrayAdapter<String> itemsAdapter = new ArrayAdapter<String>(this, R.layout.list_item,R.id.miwok_text_view, listOfNumbers);
+
+        listOfNumbers.add(new Words("one" , "lutti",R.drawable.number_one));
+        listOfNumbers.add(new Words("two" , "otiiko",R.drawable.number_two));
+        listOfNumbers.add(new Words("three" , "tolookosu",R.drawable.number_three));
+        listOfNumbers.add(new Words("four" , "oyyisa",R.drawable.number_four));
+        listOfNumbers.add(new Words("five" , "massokka",R.drawable.number_five));
+        listOfNumbers.add(new Words("six" , "temmokka",R.drawable.number_six));
+        listOfNumbers.add(new Words("seven" , "kenekaku",R.drawable.number_seven));
+        listOfNumbers.add(new Words("eight" , "kawinta",R.drawable.number_eight));
+        listOfNumbers.add(new Words("nine" , "wo'e",R.drawable.number_nine));
+        listOfNumbers.add(new Words("ten" , "na ' aacha",R.drawable.number_ten));
+
+        WordAdapter  adapter = new WordAdapter(this,  listOfNumbers,R.color.category_numbers);
 
 
         ListView listView = (ListView) findViewById(R.id.list);
 
-        listView.setAdapter(itemsAdapter);
+        listView.setAdapter(adapter);
     }
 }
 
