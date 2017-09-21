@@ -13,8 +13,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -23,26 +22,25 @@
     tools:context="com.example.android.miwok.MainActivity">
 
     <TextView
-        android:id="@+id/numbers"
+        android:id="@+id/numbersTextView"
         style="@style/CategoryStyle"
         android:background="@color/category_numbers"
-        android:text="@string/category_numbers"
-        android:onClick="openNumbersList"/>
+        android:text="@string/category_numbers" />
 
     <TextView
-        android:id="@+id/family"
+        android:id="@+id/familyTextView"
         style="@style/CategoryStyle"
         android:background="@color/category_family"
         android:text="@string/category_family" />
 
     <TextView
-        android:id="@+id/colors"
+        android:id="@+id/colorsTextView"
         style="@style/CategoryStyle"
         android:background="@color/category_colors"
         android:text="@string/category_colors" />
 
     <TextView
-        android:id="@+id/phrases"
+        android:id="@+id/phrasesTextView"
         style="@style/CategoryStyle"
         android:background="@color/category_phrases"
         android:text="@string/category_phrases" />

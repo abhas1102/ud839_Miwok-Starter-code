@@ -13,7 +13,7 @@ public class ColorsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_colors);
 
-        ArrayList<Words> listOfNumbers = new ArrayList<Words>();
+        final ArrayList<Words> listOfNumbers = new ArrayList<Words>();
 
 
         listOfNumbers.add(new Words("red" , "witetti",R.drawable.color_red));

@@ -22,7 +22,7 @@ public class NumbersActivity extends AppCompatActivity {
         setContentView(R.layout.activity_numbers);
 
 
-        ArrayList<Words> listOfNumbers = new ArrayList<Words>();
+        final ArrayList<Words> listOfNumbers = new ArrayList<Words>();
 
 
         listOfNumbers.add(new Words("one" , "lutti",R.drawable.number_one));
@@ -37,13 +37,7 @@ public class NumbersActivity extends AppCompatActivity {
         listOfNumbers.add(new Words("ten" , "na ' aacha",R.drawable.number_ten));
 
         WordAdapter  adapter = new WordAdapter(this,  listOfNumbers, R.color.category_numbers);
-
-
         ListView listView = (ListView) findViewById(R.id.list);
-
         listView.setAdapter(adapter);
     }
 }
-
-
-

@@ -13,7 +13,7 @@ public class PhrasesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_phrases);
 
-        ArrayList<Words> listOfNumbers = new ArrayList<Words>();
+       final ArrayList<Words> listOfNumbers = new ArrayList<Words>();
 
 
         listOfNumbers.add(new Words("Where are you going?" ,"minto wuksus"));
