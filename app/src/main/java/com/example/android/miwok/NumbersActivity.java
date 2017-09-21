@@ -25,7 +25,7 @@ public class NumbersActivity extends AppCompatActivity {
         ArrayList<Words> listOfNumbers = new ArrayList<Words>();
 
 
-        listOfNumbers.add(new Words("one" , "lutti",R.drawable.number_one));
+        listOfNumbers.add(new Words("on" , "lutti",R.drawable.number_one));
         listOfNumbers.add(new Words("two" , "otiiko",R.drawable.number_two));
         listOfNumbers.add(new Words("three" , "tolookosu",R.drawable.number_three));
         listOfNumbers.add(new Words("four" , "oyyisa",R.drawable.number_four));
