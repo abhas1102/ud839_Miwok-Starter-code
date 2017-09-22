@@ -32,7 +32,7 @@
         android:textAppearance="?android:textAppearanceMedium"
         android:textColor="@android:color/white"
         android:textStyle="bold"
-        android:text="lutti"
+
 
         />
 
@@ -45,7 +45,7 @@
         android:textAppearance="?android:textAppearanceMedium"
         android:textColor="@android:color/white"
         android:textStyle="bold"
-        android:text= "one"
+
         />
 
 </LinearLayout>
